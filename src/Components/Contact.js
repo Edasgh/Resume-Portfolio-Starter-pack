@@ -17,7 +17,10 @@ const Contact = ({ data }) => {
     var contactMessage = data.contactmessage;
   }
 
-  const submitForm = () => {
+  const submitForm = (e) => {
+    //prevents reloading page and getting data on page url on submit
+    e.preventDefault();
+
     window.open(
       `mailto:${contactEmail}?subject=${encodeURIComponent(
         subject

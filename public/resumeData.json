@@ -1,45 +1,45 @@
 {
   "main": {
-    "name": "Sonny Sangha",
-    "occupation": "CEO of PAPA",
-    "description": "I eat, sleep and breathe React",
+    "name": "Eshita Das",
+    "occupation": "2nd year BSc CS Student",
+    "description": "Expertise in MERN Stack with Nextjs",
     "image": "profilepic.jpg",
-    "bio": "Hi there! I am Sonny! You might also know me as PAPA React. I've been coding for over 10 years now. As a Full Stack developer I've worked both with startups and large corporations to help build & scale their companies. Along the journey I realised my passion existed in helping others excel and pursue their dreams as upcoming developers. With this passion, I have now trained thousand's of developers across the globe. Through live coaching sessions on Youtube, I have accumulated several MILLION views demonstrating how to apply developer skills in a range of cool builds and challenges. I deliver REAL VALUE by teaching REAL WORLD projects to help students enter the world of web development. You’ll get hands-on experience and learn the skills that are required to succeed in the real-world in this community.",
-    "contactmessage": "Get in touch with me to be a part of the PAPA fam!",
-    "email": "papareact.team@gmail.com",
-    "phone": "+44 1234567899",
+    "bio": "👋 Hi , I'm Eshita Das. I like to explore technologies related to Web Development (specially MERN Stack) and I love 🖥️ contributing to open source.  Currently I'm learning PHP, C Language with DSA and some technologies like, WebSockets and WebRTC . 😄 Fun Fact : I mostly do development and problem solving. And in my free time, I go to college.",
+    "contactmessage": "Hi👋, Got an app idea? leave a message here",
+    "email": "edas25564@gmail.com",
+    "phone": "+91 1234567899",
     "address": {
-      "street": "123 Dev Lane",
-      "city": "London",
-      "state": "Devosphere",
-      "zip": "W3B D3V"
+      "street": "Sahapur CMDA Road",
+      "city": "Howrah",
+      "state": "West Bengal",
+      "zip": "711 310"
     },
-    "website": "https://www.papareact.com/course",
-    "resumedownload": "http://papareact.com",
+    "website": "#",
+    "resumedownload": "#",
     "social": [
       {
         "name": "youtube",
-        "url": "https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA",
+        "url": "https://www.youtube.com/@eshitadas6499",
         "className": "fa fa-youtube"
       },
       {
         "name": "facebook",
-        "url": "https://www.facebook.com/sonny.sangha.3",
+        "url": "#",
         "className": "fa fa-facebook"
       },
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/saajansangha",
+        "url": "https://www.linkedin.com/in/eshita-das-084b962b0/",
         "className": "fa fa-linkedin"
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/ssssangha/",
+        "url": "#",
         "className": "fa fa-instagram"
       },
       {
         "name": "github",
-        "url": "https://github.com/PapaReact",
+        "url": "https://github.com/Edasgh",
         "className": "fa fa-github"
       }
     ]
@@ -48,18 +48,10 @@
     "skillmessage": "My Programming Language Proficiency",
     "education": [
       {
-        "school": "University of Kent - UK",
+        "school": "Bijoy Krishna Girls' College - West Bengal",
         "degree": "Bachelor's Degree, Computer Science",
-        "graduated": "July 2016",
-        "description": "Graduated with First Class Honours"
-      }
-    ],
-    "work": [
-      {
-        "company": "PAPA",
-        "title": "Founder and CEO",
-        "years": "May 2019 - Present",
-        "description": "Cloning all the apps possible. On the way to clone the world! Building the PAPA Fam as large as possible."
+        "graduated": "2027",
+        "description": "Currently in 2nd year"
       }
     ],
     "skills": [
@@ -68,8 +60,8 @@
         "level": "100%"
       },
       {
-        "name": "Python",
-        "level": "85%"
+        "name": "Nextjs",
+        "level": "75%"
       },
       {
         "name": "Git",
@@ -80,6 +72,18 @@
         "level": "99%"
       },
       {
+        "name": "C Language",
+        "level": "85%"
+      },
+      {
+        "name": "Mongodb",
+        "level": "75%"
+      },
+      {
+        "name": "mySQL",
+        "level": "45%"
+      },
+      {
         "name": "Web Development",
         "level": "95%"
       }
@@ -88,34 +92,22 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Snapchat Clone (React JS)",
+        "title": "Pizza Delivery MERN App",
         "category": "",
-        "image": "snapchat.jpg",
-        "url": "https://youtu.be/1kGISk5ft2w"
+        "image": "project_01.png",
+        "url": "https://github.com/Edasgh/Pizza-Delivery_web"
       },
       {
-        "title": "Gmail Clone (React JS)",
+        "title": "Find Your HackathonMates (Nextjs, Socketio)",
         "category": "",
-        "image": "gmail.jpg",
-        "url": "https://youtu.be/b7nrXjS6Dqs"
+        "image": "project_02.png",
+        "url": "https://github.com/Edasgh/find-your-hackathonmates"
       },
       {
-        "title": "LinkedIn Clone (React JS)",
+        "title": "Multiplayer Tic Tac Toe (HTML, CSS, JS, Socket.io)",
         "category": "",
-        "image": "linkedin.jpg",
-        "url": "https://youtu.be/QaYts9sPmcY"
-      }
-    ]
-  },
-  "testimonials": {
-    "testimonials": [
-      {
-        "text": "Sonny is absolutely excellent, his depth of knowledge & his mentorship really meant a lot to us... I would definitely recommend",
-        "user": "Jorge Fouto"
-      },
-      {
-        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
-        "user": "Adam Curtis"
+        "image": "project_03.png",
+        "url": "https://github.com/Edasgh/multiplayer_tic_tac_toe"
       }
     ]
   }
