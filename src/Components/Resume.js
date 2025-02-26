@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Resume = ({ data }) => {
+  const boxRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (boxRef.current) {
+        const boxTop = boxRef.current.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (boxTop < windowHeight - 100) {
+          setIsVisible(true);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run on mount in case element is already in view
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   if (data) {
     var skillmessage = data.skillmessage;
     var education = data.education.map(function (education) {
@@ -28,7 +49,9 @@ const Resume = ({ data }) => {
     //   );
     // });
     var skills = data.skills.map(function (skills) {
-      var className = "bar-expand " + skills.name.toLowerCase();
+      var className = `bar-expand ${
+        isVisible ? skills.name.toLowerCase() : ""
+      }`;
       return (
         <li key={skills.name}>
           <span style={{ width: skills.level }} className={className}></span>
@@ -39,7 +62,7 @@ const Resume = ({ data }) => {
   }
 
   return (
-    <section id="resume">
+    <section className={isVisible ? "fadeIn" : "fadeIn_box"} id="resume" ref={boxRef}>
       <div className="row education">
         <div className="three columns header-col">
           <h1>

@@ -25,6 +25,11 @@ const Footer = ({ data }) => {
               <a title="PAPA" href="http://www.papareact.com/">
                 PAPA
               </a>
+              <br/>
+              Modified by{" "}
+              <a title="Eshita Das" href="/">
+                Eshita Das
+              </a>
             </li>
           </ul>
         </div>

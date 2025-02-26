@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Portfolio = ({ data }) => {
   if (data) {
@@ -7,7 +7,12 @@ const Portfolio = ({ data }) => {
       return (
         <div key={projects.title} className="columns portfolio-item">
           <div className="item-wrap">
-            <a href={projects.url} title={projects.title}>
+            <a
+              href={projects.url}
+              target="_blank"
+              rel="noreferrer"
+              title={projects.title}
+            >
               <img alt={projects.title} src={projectImage} />
               <div className="overlay">
                 <div className="portfolio-item-meta">
@@ -25,8 +30,29 @@ const Portfolio = ({ data }) => {
     });
   }
 
+   const boxRef = useRef(null);
+       const [isVisible, setIsVisible] = useState(false);
+    
+       useEffect(() => {
+         const handleScroll = () => {
+           if (boxRef.current) {
+             const boxTop = boxRef.current.getBoundingClientRect().top;
+             const windowHeight = window.innerHeight;
+    
+             if (boxTop < windowHeight - 100) {
+               setIsVisible(true);
+             }
+           }
+         };
+    
+         window.addEventListener("scroll", handleScroll);
+         handleScroll(); // Run on mount in case element is already in view
+    
+         return () => window.removeEventListener("scroll", handleScroll);
+       }, []);
+
   return (
-    <section id="portfolio">
+    <section className={isVisible?"fadeIn":"fadeIn_box"} id="portfolio" ref={boxRef} >
       <div className="row">
         <div className="twelve columns collapsed">
           <h1 style={{

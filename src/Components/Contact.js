@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Contact = ({ data }) => {
   const [name, setName] = useState("");
@@ -17,6 +17,28 @@ const Contact = ({ data }) => {
     var contactMessage = data.contactmessage;
   }
 
+   const boxRef = useRef(null);
+   const [isVisible, setIsVisible] = useState(false);
+
+   useEffect(() => {
+     const handleScroll = () => {
+       if (boxRef.current) {
+         const boxTop = boxRef.current.getBoundingClientRect().top;
+         const windowHeight = window.innerHeight;
+
+         if (boxTop < windowHeight - 100) {
+           setIsVisible(true);
+         }
+       }
+     };
+
+     window.addEventListener("scroll", handleScroll);
+     handleScroll(); // Run on mount in case element is already in view
+
+     return () => window.removeEventListener("scroll", handleScroll);
+   }, []);
+
+
   const submitForm = (e) => {
     //prevents reloading page and getting data on page url on submit
     e.preventDefault();
@@ -31,7 +53,7 @@ const Contact = ({ data }) => {
   };
 
   return (
-    <section id="contact">
+    <section className={isVisible ? "fadeIn":"fadeIn_box"} id="contact" ref={boxRef} >
       <div className="row section-head">
         <div className="two columns header-col">
           <h1>
@@ -54,7 +76,6 @@ const Contact = ({ data }) => {
                 </label>
                 <input
                   type="text"
-                  defaultValue=""
                   value={name}
                   size="35"
                   id="contactName"
@@ -69,7 +90,6 @@ const Contact = ({ data }) => {
                 </label>
                 <input
                   type="text"
-                  defaultValue=""
                   value={email}
                   size="35"
                   id="contactEmail"
@@ -82,7 +102,6 @@ const Contact = ({ data }) => {
                 <label htmlFor="contactSubject">Subject</label>
                 <input
                   type="text"
-                  defaultValue=""
                   value={subject}
                   size="35"
                   id="contactSubject"
