@@ -1,5 +1,6 @@
-# Edasgh Digital Portfolio
+# Eshita Das Digital Portfolio
 
+![Edasgh digital portfolio](https://github.com/user-attachments/assets/d87f68cf-2c66-49df-ae7e-970129dbbfb3)
 
 
 ### <a href="https://edasgh-portfolio-web.vercel.app/">LIVE DEMO</a>
