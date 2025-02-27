@@ -41,6 +41,8 @@ const Portfolio = ({ data }) => {
     
              if (boxTop < windowHeight - 100) {
                setIsVisible(true);
+             }else{
+               setIsVisible(false);
              }
            }
          };

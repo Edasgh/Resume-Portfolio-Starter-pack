@@ -2,7 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 
 const Resume = ({ data }) => {
   const boxRef = useRef(null);
+  const skillsRef = useRef(null);
+
   const [isVisible, setIsVisible] = useState(false);
+  const [isSkillsVisible, setIsSkillsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,8 +15,23 @@ const Resume = ({ data }) => {
 
         if (boxTop < windowHeight - 100) {
           setIsVisible(true);
+        }else{
+           setIsVisible(false);
         }
       }
+
+      if(skillsRef.current)
+      {
+         const skillsTop = skillsRef.current.getBoundingClientRect().top;
+         const windowHeight = window.innerHeight;
+
+         if (skillsTop < windowHeight - 100) {
+           setIsSkillsVisible(true);
+         }else{
+           setIsSkillsVisible(false);
+         }
+      }
+
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -50,7 +68,7 @@ const Resume = ({ data }) => {
     // });
     var skills = data.skills.map(function (skills) {
       var className = `bar-expand ${
-        isVisible ? skills.name.toLowerCase() : ""
+        isSkillsVisible ? skills.name.toLowerCase() : ""
       }`;
       return (
         <li key={skills.name}>
@@ -62,7 +80,11 @@ const Resume = ({ data }) => {
   }
 
   return (
-    <section className={isVisible ? "fadeIn" : "fadeIn_box"} id="resume" ref={boxRef}>
+    <section
+      className={isVisible ? "fadeIn" : "fadeIn_box"}
+      id="resume"
+      ref={boxRef}
+    >
       <div className="row education">
         <div className="three columns header-col">
           <h1>
@@ -87,7 +109,10 @@ const Resume = ({ data }) => {
         <div className="nine columns main-col">{work}</div>
       </div> */}
 
-      <div className="row skill">
+      <div
+        className={`row skill ${isSkillsVisible ? "fadeIn" : "fadeIn_box"} `}
+        ref={skillsRef}
+      >
         <div className="three columns header-col">
           <h1>
             <span>Skills</span>

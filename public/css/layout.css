@@ -1280,7 +1280,7 @@ footer .social-links li:first-child {
   opacity: 0; /* Initially hidden */
 }
 .fadeIn {
-  animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeIn .85s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
