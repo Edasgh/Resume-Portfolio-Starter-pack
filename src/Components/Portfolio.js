@@ -54,14 +54,22 @@ const Portfolio = ({ data }) => {
        }, []);
 
   return (
-    <section className={isVisible?"fadeIn":"fadeIn_box"} id="portfolio" ref={boxRef} >
+    <section
+      className={isVisible ? "fadeIn" : "fadeIn_box"}
+      id="portfolio"
+      ref={boxRef}
+    >
       <div className="row">
         <div className="twelve columns collapsed">
-          <h1 style={{
-            fontSize:"2.5rem",
-            color:"black",
-            textShadow:"1px 1px 5px grey, -1px -1px 5px grey"
-          }} >Check Out Some of My Projects.</h1>
+          <h1
+            style={{
+              fontSize: "3rem",
+              color: "black",
+              textShadow: "1px 1px 5px grey, -1px -1px 5px grey",
+            }}
+          >
+            My Projects and Contributions
+          </h1>
 
           <div
             id="portfolio-wrapper"

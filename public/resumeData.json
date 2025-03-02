@@ -5,7 +5,7 @@
     "description": "Expertise in MERN Stack with Nextjs",
     "image": "profilepic.jpg",
     "bio": "👋 Hi , I'm Eshita Das. I like to explore technologies related to Web Development (specially MERN Stack) and I love 🖥️ contributing to open source.Currently I'm learning GenAI, C Language with DSA and some technologies like, WebSockets and WebRTC .😄 Fun Fact : I mostly do development and problem solving. And in my free time, I go to college.",
-    "contactmessage": "Hi👋, Got an app idea? leave a message here",
+    "contactmessage": "👨‍💻 Wanna team up for an app idea? leave a message here",
     "email": "edas25564@gmail.com",
     "phone": "+91 1234567899",
     "address": {
@@ -108,6 +108,12 @@
         "category": "",
         "image": "project_03.png",
         "url": "https://github.com/Edasgh/multiplayer_tic_tac_toe"
+      },
+      {
+        "title": "Agentube - AI Content Creation Agent",
+        "category": "",
+        "image": "project_04.png",
+        "url": "https://github.com/Edasgh/agentube"
       },
       {
         "title": "39 PRs Merged",
