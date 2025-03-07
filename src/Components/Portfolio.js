@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const Portfolio = ({ data }) => {
+
   if (data) {
     var projects = data.projects.map(function (projects) {
       var projectImage = "images/portfolio/" + projects.image;
       return (
-        <div key={projects.title} className="columns portfolio-item">
+        <div key={projects.title} className="columns portfolio-item project-card">
           <div className="item-wrap">
             <a
               href={projects.url}
@@ -16,7 +17,7 @@ const Portfolio = ({ data }) => {
               <img alt={projects.title} src={projectImage} />
               <div className="overlay">
                 <div className="portfolio-item-meta">
-                  <h5>{projects.title}</h5>
+                  <h3>{projects.title}</h3>
                   <p>{projects.category}</p>
                 </div>
               </div>
@@ -66,6 +67,7 @@ const Portfolio = ({ data }) => {
               fontSize: "3rem",
               color: "black",
               textShadow: "1px 1px 5px grey, -1px -1px 5px grey",
+              lineHeight:"4rem"
             }}
           >
             My Projects and Contributions
@@ -73,7 +75,7 @@ const Portfolio = ({ data }) => {
 
           <div
             id="portfolio-wrapper"
-            className="bgrid-quarters s-bgrid-thirds cf"
+            className="cf"
           >
             {projects}
           </div>

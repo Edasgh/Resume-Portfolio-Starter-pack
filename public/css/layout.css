@@ -693,8 +693,7 @@ ul#nav li.current a {
 .portfolio-item .portfolio-item-meta {
   padding: 18px;
 }
-.portfolio-item .portfolio-item-meta h5 {
-  font: 14px/21px "opensans-bold", sans-serif;
+.portfolio-item .portfolio-item-meta h3 {
   color: #fff;
 }
 .portfolio-item .portfolio-item-meta p {
@@ -1292,4 +1291,11 @@ footer .social-links li:first-child {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+/* project card */
+.project-card{
+  width:50%;
+  height: fit-content;
 }

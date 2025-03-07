@@ -92,38 +92,38 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Pizza Delivery MERN App",
-        "category": "",
+        "title": "Pizza Delivery App",
+        "category": "MERN Stack [Mongodb, Express.js, React.js, Node.js]",
         "image": "project_01.png",
         "url": "https://github.com/Edasgh/Pizza-Delivery_web"
       },
       {
-        "title": "Find Your HackathonMates (Nextjs, Socketio)",
-        "category": "",
+        "title": "Find Your HackathonMates",
+        "category": "Nextjs, Tailwind CSS, Socketio, Mongodb, Nodemailer, Cloudinary Sdk, Gemini AI",
         "image": "project_02.png",
         "url": "https://github.com/Edasgh/find-your-hackathonmates"
       },
       {
-        "title": "Multiplayer Tic Tac Toe (HTML, CSS, JS, Socket.io)",
-        "category": "",
+        "title": "Multiplayer Tic Tac Toe",
+        "category": "HTML, CSS, JS, Socket.io",
         "image": "project_03.png",
         "url": "https://github.com/Edasgh/multiplayer_tic_tac_toe"
       },
       {
         "title": "Agentube - AI Content Creation Agent",
-        "category": "",
+        "category": "Nextjs, Shadcn UI,Tailwind V4, Vercel AI Sdk, Convex Db, Gemini AI, Together AI",
         "image": "project_04.png",
         "url": "https://github.com/Edasgh/agentube"
       },
       {
         "title": "39 PRs Merged",
-        "category": "",
+        "category": "All of my open source contributions",
         "image": "prs.png",
         "url": "https://github.com/pulls?q=is%3Apr+author%3AEdasgh+archived%3Afalse+is%3Aclosed"
       },
       {
         "title": "See More Projects....",
-        "category": "",
+        "category": "View more projects on my Github Profile",
         "image": "edasgh.png",
         "url": "https://github.com/Edasgh"
       }
