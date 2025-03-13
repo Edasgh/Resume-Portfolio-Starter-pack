@@ -95,37 +95,43 @@
         "title": "Pizza Delivery App",
         "category": "MERN Stack [Mongodb, Express.js, React.js, Node.js]",
         "image": "project_01.png",
-        "url": "https://github.com/Edasgh/Pizza-Delivery_web"
+        "url": "https://github.com/Edasgh/Pizza-Delivery_web",
+        "live":"https://pizza-delivery-web.onrender.com/"
       },
       {
         "title": "Find Your HackathonMates",
         "category": "Nextjs, Tailwind CSS, Socketio, Mongodb, Nodemailer, Cloudinary Sdk, Gemini AI",
         "image": "project_02.png",
-        "url": "https://github.com/Edasgh/find-your-hackathonmates"
+        "url": "https://github.com/Edasgh/find-your-hackathonmates",
+        "live":"https://find-your-hackathonmates.onrender.com/"
       },
       {
         "title": "Multiplayer Tic Tac Toe",
         "category": "HTML, CSS, JS, Socket.io",
         "image": "project_03.png",
-        "url": "https://github.com/Edasgh/multiplayer_tic_tac_toe"
+        "url": "https://github.com/Edasgh/multiplayer_tic_tac_toe",
+        "live":"https://multiplayer-tic-tac-toe-6nt4.onrender.com/"
       },
       {
         "title": "ContentAI - AI Content Creation Agent",
         "category": "Nextjs, Shadcn UI,Tailwind V4, Vercel AI Sdk, Convex Db, Gemini AI, Together AI",
         "image": "project_04.png",
-        "url": "https://github.com/Edasgh/contentAI"
+        "url": "https://github.com/Edasgh/contentAI",
+        "live":"https://contentai-edasgh.vercel.app/"
       },
       {
         "title": "39 PRs Merged",
         "category": "All of my open source contributions",
         "image": "prs.png",
-        "url": "https://github.com/pulls?q=is%3Apr+author%3AEdasgh+archived%3Afalse+is%3Aclosed"
+        "url": "https://github.com/pulls?q=is%3Apr+author%3AEdasgh+archived%3Afalse+is%3Aclosed",
+        "live":"https://github.com/pulls?q=is%3Apr+author%3AEdasgh+archived%3Afalse+is%3Aclosed"
       },
       {
         "title": "See More Projects....",
         "category": "View more projects on my Github Profile",
         "image": "edasgh.png",
-        "url": "https://github.com/Edasgh"
+        "url": "https://github.com/Edasgh",
+        "live":"https://github.com/Edasgh"
       }
     ]
   }

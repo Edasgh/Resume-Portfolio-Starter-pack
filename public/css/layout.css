@@ -663,8 +663,9 @@ ul#nav li.current a {
 
   background: url(../images/overlay-bg.png) repeat;
 }
-.portfolio-item .item-wrap .link-icon {
-  display: block;
+.portfolio-item .item-wrap .link-icon{
+  display: flex;
+  gap:25px;
   color: #fff;
   height: 30px;
   width: 30px;
@@ -687,6 +688,7 @@ ul#nav li.current a {
   margin-left: -15px;
   margin-top: -15px;
 }
+
 .portfolio-item .item-wrap img {
   vertical-align: bottom;
 }
@@ -1001,7 +1003,7 @@ call-to-action .button {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .flex-control-paging li a {
   width: 12px;
